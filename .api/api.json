@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "vybe-api",
+      "source": "@vybe-api/v3.9.10#aancp7gmb00gzww",
+      "integrity": "sha512-CoM8Op/7j9MxIQvdeL7n/GI+kkLEz/W+JeWJExbh0QjfnAeLSlV1imuCz+6ylah4c1p4Xz/lC4rE2QUgtmfdUQ==",
+      "installerVersion": "6.1.3"
+    }
+  ]
+}
