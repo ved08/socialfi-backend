@@ -29,18 +29,7 @@ yarn install
 Create a `.env` file in the root directory and add the following environment variables:
 
 ```env
-# Database
 DATABASE_URL="postgresql://user:password@localhost:5432/socialfi?schema=public"
-
-# Vybe API (for token data)
-VYBE_API="your-vybe-api-key"
-
-# JWT Secret (for authentication)
-JWT_SECRET="your-jwt-secret"
-
-# Server
-PORT=3000
-NODE_ENV=development
 ```
 
 ### 4. Set up the database
@@ -65,13 +54,13 @@ The server will start on `http://localhost:3000` by default.
 
 ## Environment Variables
 
-| Variable       | Description                  | Required            | Default     |
-| -------------- | ---------------------------- | ------------------- | ----------- |
-| `DATABASE_URL` | PostgreSQL connection URL    | Yes                 | -           |
-| `VYBE_API`     | API key for Vybe Network     | No                  | -           |
-| `JWT_SECRET`   | Secret for JWT token signing | Yes (in production) | -           |
-| `PORT`         | Port to run the server on    | No                  | 3000        |
-| `NODE_ENV`     | Environment mode             | No                  | development |
+Set up your `.env` file with the following variable:
+
+```
+DATABASE_URL="postgresql://user:password@localhost:5432/socialfi?schema=public"
+```
+
+Replace the connection string with your actual PostgreSQL database credentials.
 
 ## Available Scripts
 
@@ -93,10 +82,6 @@ The server will start on `http://localhost:3000` by default.
 - `POST /posts` - Create a new post
 - `GET /posts/:id` - Get a specific post
 
-### Token Data
-
-- `POST /token-history` - Get historical token data
-- `GET /token-price/:mintAddress` - Get current token price
 
 ## Database Schema
 
